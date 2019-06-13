@@ -1,0 +1,30 @@
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;	
+	margin-left: 10px;
+}
+
+.menu__item {
+	padding: 0 5px;
+	margin-left: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #c0382f;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+	border: 2px solid transparent;
+
+	&:hover {
+		border-color: #c0382f;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+}

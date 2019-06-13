@@ -1,0 +1,35 @@
+.page-footer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	&:before {
+		position: absolute;
+		left: 50%;
+		top: -40px;
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-color: #c0382f;
+		transform: translateX(-50%) rotate(45deg) ;
+	}
+}
+
+.page-footer__highlight {
+	color: #c0382f;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.page-footer__additional-info {
+	margin-top: -3px;
+	font-size: 16px;
+	line-height: 21px;
+	color: #292929;
+	font-weight: 300;
+}
